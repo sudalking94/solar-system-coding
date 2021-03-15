@@ -1,0 +1,158 @@
+@import "css/footer.css";
+@import "css/loading.css";
+body {
+    background-image: url(images/universe.jpg);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.solar-system {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solar-system__planet{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.solar-system__planet img {
+    width:  30px;
+    height: 30px;
+    border-radius: 50%;        
+    position: absolute;
+}
+
+#sun {
+    width: 50px;
+    height: 50px;
+}
+
+#mecury {
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    left: -3.5px;
+}
+
+#venus {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    left: -4.5px;
+}
+
+#earth {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -5px;
+}
+
+#mars {
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    left: -5.5px;
+}
+
+#jupitor {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -10px;
+}
+
+#saturn {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -7.5px;
+    border-radius: 0%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#uranus {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -7.5px;
+}
+
+#neptune {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -7.5px;
+}
+
+.orbit {    
+    border: 1px dotted rgba(160, 147, 130, 0.3) ;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateZ(0);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }  
+}
+
+.orbit-size-mecury {
+    width: 200%;
+    height: 200%;
+    animation: rotation 1.5s linear infinite;
+}
+
+.orbit-size-venus {
+    width: 300%;
+    height: 300%;
+    animation: rotation 2s linear infinite;
+}
+
+.orbit-size-earth {
+    width: 400%;
+    height: 400%;
+    animation: rotation 3.5s linear infinite;
+}
+
+.orbit-size-mars {
+    width: 500%;
+    height: 500%;
+    animation: rotation 5s linear infinite;
+}
+
+.orbit-size-jupitor {
+    width: 700%;
+    height: 700%;
+    animation: rotation 10s linear infinite;
+}
+
+.orbit-size-saturn {
+    width: 800%;
+    height: 800%;
+    animation: rotation 12s linear infinite;
+}
+
+.orbit-size-uranus {
+    width: 900%;
+    height: 900%;
+    animation: rotation 15s linear infinite;
+}
+
+.orbit-size-neptune {
+    width: 1000%;
+    height: 1000%;
+    animation: rotation 20s linear infinite;
+}

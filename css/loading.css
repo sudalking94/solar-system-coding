@@ -1,0 +1,40 @@
+@keyframes loadingScreen {
+    from {
+      opacity: 1;
+    }
+    to {
+      /* opacity: 0; 
+      visibility: hidden; */
+    }
+}
+
+
+#loading-screen {
+    background-image: url(universe.jpg);
+    color: cadetblue;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: loadingScreen 0.4s ease-in-out forwards;
+    /* animation-delay: 2s; */
+}
+
+.loading {
+    border: 2px solid cadetblue;
+    width: 500px;
+    height: 20px;    
+    display: flex;
+}
+.loading span {
+    color: cadetblue;
+}
+.loading__bar {
+    background-color: cadetblue;
+    width: 5px;
+    height: 20px;
+}

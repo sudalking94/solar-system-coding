@@ -1,0 +1,12 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+footer span{
+    color: white;
+    font-size: 25px;
+}
