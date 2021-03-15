@@ -10,7 +10,7 @@
   <body>
     <div class="solar-system">
       <img src="images/sun.jpg" alt="sun" id="sun" />
-      <div class="solar-system__planet orbit orbit-size-mecury">
+      <div class="solar-system__planet orbit orbit-size-mecury" id="mecury-div">
         <img src="images/mercury.jpg" alt="mecury" id="mecury" />
       </div>
       <div class="solar-system__planet orbit orbit-size-venus">
@@ -35,22 +35,26 @@
         <img src="images/neptune.jpg" alt="neptune" id="neptune" />
       </div>
     </div>
+    <div id="transition-to-landscape">
+      <span>Switch to landscape mode.</span>
+    </div>
     <footer>
-      <span>Sun</span>
-      <span>Mecury</span>
-      <span>Venus</span>
-      <span>Earth</span>
-      <span>mars</span>
-      <span>Jupitor</span>
-      <span>Saturn</span>
-      <span>Uranus</span>
-      <span>Neptune</span>
+      <span id="hover-mecury">Mecury</span>
+      <span id="hover-venus">Venus</span>
+      <span id="hover-earth">Earth</span>
+      <span id="hover-mars">mars</span>
+      <span id="hover-jupitor">Jupitor</span>
+      <span id="hover-saturn">Saturn</span>
+      <span id="hover-uranus">Uranus</span>
+      <span id="hover-neptune">Neptune</span>
     </footer>
+
     <div id="loading-screen">
       <h1>Loading</h1>
       <div class="loading" id="loading"></div>
       <span class="loading-screen__percentage"></span>
     </div>
+
     <script src="loading.js"></script>
   </body>
 </html>

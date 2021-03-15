@@ -10,3 +10,7 @@ footer span{
     color: white;
     font-size: 25px;
 }
+
+footer span:hover {
+    cursor: pointer;
+}

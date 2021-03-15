@@ -1,5 +1,9 @@
 const loading = document.getElementById("loading");
 const percentage = document.querySelector(".loading-screen__percentage");
+const planetName = document.querySelectorAll(".planet-name");
+const mecury = document.getElementById("hover-mecury");
+
+
 let i = 1;
 let t = null;
 
@@ -21,9 +25,21 @@ function makePercent() {
             demo();                                    
         }
 }
-
+function orbigColor(e) {
+    if (e.type == "mouseover") {
+        document.getElementById("mecury-div").classList.remove("orbit");
+        document.getElementById("mecury-div").classList.add("orbit-color");
+    }
+    else {
+        document.getElementById("mecury-div").classList.remove("orbit-color");
+        document.getElementById("mecury-div").classList.add("orbit");
+    }
+    
+}
 function init() {        
     t = setInterval(makePercent,50);    
+    mecury.addEventListener("mouseover", orbigColor);
+    mecury.addEventListener("mouseleave",orbigColor)
 }
 
 init();
